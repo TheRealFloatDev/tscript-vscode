@@ -1,0 +1,25 @@
+{
+    "name": "tscript-vscode",
+    "displayName": "tscript-vscode",
+    "description": "Language support for TScript",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.84.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tscript",
+            "aliases": ["TScript", "tscript"],
+            "extensions": [".tscript"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tscript",
+            "scopeName": "source.tscript",
+            "path": "./syntaxes/tscript.tmLanguage.json"
+        }]
+    }
+}
