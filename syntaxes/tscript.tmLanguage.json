@@ -90,10 +90,17 @@
           "name": "comment.line.number-sign.tscript"
         },
         {
-          "begin": "/\\*",
-          "end": "\\*/",
-          "name": "comment.block.tscript"
-        }
+			"begin": "#\\*",
+			"end": "\\*#",
+			"name": "comment.block.tscript",
+			"patterns": [
+			  {
+				"match": ".+",
+				"name": "comment.block.tscript"
+			  }
+			]
+		  }
+		  
       ]
     },
     "keywords": {
