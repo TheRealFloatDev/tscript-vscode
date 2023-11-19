@@ -86,21 +86,20 @@
     "comments": {
       "patterns": [
         {
-          "match": "#.*$",
-          "name": "comment.line.number-sign.tscript"
+          "begin": "#\\*",
+          "end": "\\*#",
+          "name": "comment.block.tscript",
+          "patterns": [
+            {
+              "match": "\\s*#\\*.*\\*#\\s*",
+              "name": "comment.block.tscript"
+            }
+          ]
         },
         {
-			"begin": "#\\*",
-			"end": "\\*#",
-			"name": "comment.block.tscript",
-			"patterns": [
-			  {
-				"match": ".+",
-				"name": "comment.block.tscript"
-			  }
-			]
-		  }
-		  
+          "match": "#.*$",
+          "name": "comment.line.number-sign.tscript"
+        }
       ]
     },
     "keywords": {
