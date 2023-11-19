@@ -1,6 +1,6 @@
 {
     "name": "tscript-vscode",
-    "displayName": "tscript-vscode",
+    "displayName": "TScript VSCode",
     "description": "Language support for TScript",
     "version": "0.0.1",
     "engines": {
@@ -22,4 +22,5 @@
             "path": "./syntaxes/tscript.tmLanguage.json"
         }]
     }
+     
 }
