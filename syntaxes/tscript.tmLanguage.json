@@ -105,7 +105,7 @@
     "keywords": {
       "patterns": [
         {
-          "match": "\\b(and|break|case|catch|class|const|continue|default|do|else|enum|export|false|for|from|if|import|include|module|namespace|not|null|operator|or|private|protected|public|return|static|super|switch|then|this|throw|true|try|use|var|while|xor)\\b",
+          "match": "\\b(and|break|case|catch|class|const|continue|default|do|else|enum|export|false|for|from|if|import|include|module|namespace|not|null|operator|or|private|protected|public|return|static|super|switch|then|this|throw|true|try|use|var|while|xor|in)\\b",
           "name": "keyword.control.tscript"
         }
       ]
