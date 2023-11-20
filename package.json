@@ -3,6 +3,10 @@
     "displayName": "TScript VSCode",
     "description": "Language support for TScript",
     "icon": "images/icon.png",
+    "author": {
+        "name": "Alexander Neitzel",
+        "email": "alexander.neitzel@garmingo.com"
+    },
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.84.0"
