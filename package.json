@@ -1,31 +1,44 @@
 {
-    "name": "tscript-vscode",
-    "displayName": "TScript VSCode",
-    "description": "Language support for TScript",
-    "icon": "images/icon.png",
-    "author": {
-        "name": "Alexander Neitzel",
-        "email": "alexander.neitzel@garmingo.com"
-    },
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.84.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "tscript-vscode",
+  "displayName": "TScript VSCode",
+  "description": "Language support for TScript",
+  "icon": "images/icon.png",
+  "author": {
+    "name": "Alexander Neitzel",
+    "email": "alexander.neitzel@garmingo.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheRealFloatDev/tscript-vscode.git"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tscript",
+        "aliases": [
+          "TScript",
+          "tscript"
+        ],
+        "extensions": [
+          ".tscript"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "tscript",
-            "aliases": ["TScript", "tscript"],
-            "extensions": [".tscript"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "tscript",
-            "scopeName": "source.tscript",
-            "path": "./syntaxes/tscript.tmLanguage.json"
-        }]
-    }
-     
+    "grammars": [
+      {
+        "language": "tscript",
+        "scopeName": "source.tscript",
+        "path": "./syntaxes/tscript.tmLanguage.json"
+      }
+    ]
+  }
 }
